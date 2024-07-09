@@ -1,0 +1,239 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(239, 241, 243);
+    line-height: 1.6;
+}
+
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.website-name {
+    color: #fff;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #c61313;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+
+header {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+header form {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgba(124, 176, 200, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+}
+
+header form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header form button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.container, .container2 {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2, .container2 h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.destinations-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination {
+    flex: 1;
+    margin: 20px;
+    text-align: left;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.destination h3 {
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.destination p {
+    margin: 10px;
+}
+
+.destination button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    display: block;
+    text-align: center;
+}
+
+
+form {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    header form {
+        width: 80%;
+    }
+
+    .destinations-row {
+        flex-direction: column;
+    }
+
+    .destination {
+        width: calc(100% - 40px);
+    }
+
+    .container, .container2 {
+        padding: 10px;
+    }
+}

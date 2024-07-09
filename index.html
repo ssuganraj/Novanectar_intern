@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Booking Website">
+    <meta name="keywords" content="travel, vacation, booking, destinations, tourism">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <span class="website-name">Book4Travel</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#booking">Places</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Explore the World with Us</h1>
+        <p>Your dream vacation is just a click away!</p>
+        <form id="signin-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </header>
+
+    <section id="booking" class="container">
+        <h2>Book Your Trip</h2>
+        <div class="destinations-row">
+            <div class="destination">
+                <img src="bangok.jpg" alt="Bangkok, Thailand">
+                <h3>Bangkok, Thailand</h3>
+                <p>Bangkok, the capital of Thailand, is known for its vibrant street life, ornate shrines, and bustling markets. Visitors can explore the Grand Palace, Wat Arun, and enjoy Thai cuisine in its numerous street food stalls.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="destination">
+                <img src="dubaio.jpg" alt="Dubai, UAE">
+                <h3>Dubai, UAE</h3>
+                <p>Dubai is a city of superlatives, famous for its ultramodern architecture, luxury shopping, and lively nightlife scene. Key attractions include the Burj Khalifa, Palm Jumeirah, and Dubai Mall.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="destinations-row">
+            <div class="destination">
+                <img src="london.jpg" alt="London, UK">
+                <h3>London, UK</h3>
+                <p>London, the capital of England, is a cultural melting pot known for its historic landmarks such as the Buckingham Palace, Tower Bridge, and British Museum. It offers a blend of history, art, fashion, and cuisine.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="destination">
+                <img src="nyc.jpg" alt="New York City, USA">
+                <h3>New York City, USA</h3>
+                <p>New York City, often called the "Big Apple," is a global hub of finance, culture, and entertainment. Visitors can explore iconic landmarks like Times Square, Central Park, Statue of Liberty, and enjoy Broadway shows.</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container2">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
